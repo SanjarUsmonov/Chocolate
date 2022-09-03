@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oooh+Baby&family=Rajdhani:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani';
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --brown:#59351D;
+    --brown-png:#59351d3b;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    height: 745px;
+    background-image: url(img/desktop-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--brown-png);
+}
+.fa-mug-hot{
+    color: var(--white);
+    font-size: 30px;
+}
+.menu{
+    width: 600px;
+}
+.link{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--white);
+}
+.link:hover{
+    text-decoration: underline;
+    color: var(--black);
+}
+.fa-chevron-down{
+    padding-left: 8px;
+}
+.button{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brown);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+
+@media (min-width:481px) and (max-width:768px) {
+    header{
+        height: 667px;
+        background-image: url(img/desktop-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav{
+        height: 60px;
+    }
+    .navbar{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .fa-mug-hot{
+        color: var(--white);
+        font-size: 24px;
+    }
+    .menu{
+        width: 400px;
+    }
+    .link{
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--white);
+    }
+    .link:hover{
+        text-decoration: underline;
+        color: var(--black);
+    }
+    .fa-chevron-down{
+        display: none;
+    }
+    .button{
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--brown);
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .button:hover{
+        background-color: transparent;
+        text-decoration: none;
+        border: 1px solid #000;
+    }
+}
